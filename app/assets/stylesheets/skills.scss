@@ -1,0 +1,23 @@
+// Place all the styles related to the Skills controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.columnFlow {
+  flex-flow: column wrap;
+}
+
+.rowFlow {
+  flex-flow: row wrap;
+}
+
+
+
+h1 {
+  color: #730E15;
+}
+
