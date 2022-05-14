@@ -13,9 +13,10 @@
 </header>
 <main class="center rowFlow">
   <section class="center columnFlow">
-    <p>Your skills will be put to test...</p>
-    <%= form_with do %>
-
+    <p><%= @guest %>... Your skills will be put to test...</p>
+    <%= form_with url: "skills/skills", method: :get, data: {turbo: "false"} do |form| %>
+      <%= form.text_field :skills %>
+      <%= form.submit "Submit" %>
     <%end%>
   </section>
 </main>
