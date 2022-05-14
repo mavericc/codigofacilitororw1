@@ -6,7 +6,11 @@ class SkillsController < ApplicationController
   end
 
   def skills
-    @ur_skills = params[:skills].split(',')
+    if params[:skills].nil?
+      redirect_to '/'
+    else
+      @ur_skills = params[:skills].split(',')
+    end
   end
 
 end
